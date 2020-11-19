@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package user;
+option go_package="github.com/ttomzhou/go-rpc/protoc/user;api";
+
+import "protoc/common/common.proto";
+
+message UserResponse {
+    string name = 1;
+    int32 age = 2;
+}
+
+message UserRequest {
+    common.CommonRequest request = 1;
+    string name = 2;
+}

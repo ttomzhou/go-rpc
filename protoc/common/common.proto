@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package common;
+option go_package="github.com/ttomzhou/go-rpc/protoc/common;api";
+
+message CommonRequest {
+    string OrderKey = 1;
+    int32 Limit = 2;
+    int32 Offset =3;
+}
