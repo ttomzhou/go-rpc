@@ -5,6 +5,6 @@ fileList=`ls ${pwd}/protoc`
 
 for dir in ${fileList}
 do
-    protoc_cmd="protoc -I. -I protoc --go_out=plugins=grpc,paths=source_relative:. protoc/${dir}/*.proto"
+    protoc_cmd="protoc -I protoc --go_out=plugins=grpc,paths=source_relative:. protoc/${dir}/*.proto"
     eval "${protoc_cmd}"
 done
