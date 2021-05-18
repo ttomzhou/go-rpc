@@ -50,3 +50,19 @@
 - [googleapis](https://github.com/googleapis/googleapis)
 - [protocol buffer插件列表](https://github.com/protocolbuffers/protobuf/blob/master/docs/third_party.md)
 - [google.api的proto插件](https://github.com/googleapis/googleapis/blob/master/google/api/field_behavior.proto)
+
+### 第三方插件
+```shell
+go get \
+    github.com/axw/gocov/gocov \
+    github.com/envoyproxy/protoc-gen-validate \
+    github.com/go-swagger/go-swagger/cmd/swagger \
+    github.com/golang/mock/mockgen \
+    github.com/golangci/golangci-lint/cmd/golangci-lint \
+    github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway \
+    github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-openapiv2 \
+    github.com/pseudomuto/protoc-gen-doc/cmd/protoc-gen-doc \
+    golang.org/x/tools/cmd/goimports \
+    google.golang.org/grpc/cmd/protoc-gen-go-grpc \
+    google.golang.org/protobuf/cmd/protoc-gen-go
+```
